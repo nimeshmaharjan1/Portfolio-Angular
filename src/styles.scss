@@ -1,1 +1,39 @@
+@use 'themes' as *;
+
+@use '@nebular/theme/styles/globals' as *;
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap');
+
+@include nb-install() {
+  @include nb-theme-global();
+};
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --mainColor: #eaeaea;
+    --secondaryMainColor: #fff;
+    --borderColor: #c1c1c1;
+    --mainText: rgb(180, 81, 81);
+    --secondaryText: #4b5156;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 strong{
+    color: var(--mainText);
+}
+h1{
+    font-size: 56px;
+    font-family: 'Russo One', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #17a2b8;
+}
+ul{
+    list-style-type:none;
+}
+
