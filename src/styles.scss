@@ -15,19 +15,29 @@
     --mainColor: #eaeaea;
     --secondaryMainColor: #fff;
     --borderColor: #c1c1c1;
-    --mainText: rgb(180, 81, 81);
+    --mainText: rgb(54, 54, 54);
     --secondaryText: #4b5156;
+    --themeDotBorder: #24292e;
+    --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6;
 }
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 h1, h2, h3, h4, h5, h6 strong{
     color: var(--mainText);
+    font-family: 'Russo One', sans-serif;
+    font-weight: 500;
+}
+
+p, li, span, label, input, textarea{
+    color: var(--secondaryText);
+    font-family: 'Roboto Mono', monospace;
 }
 h1{
     font-size: 56px;
-    font-family: 'Russo One', sans-serif;
 }
 a{
     text-decoration: none;
